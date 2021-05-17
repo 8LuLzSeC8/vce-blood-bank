@@ -1,0 +1,155 @@
+body{
+    background-color:#ffe6d6;
+}
+nav{
+    background-color: rgb(0,0,0,0.4);
+    height: 7%;
+}
+nav logo i{
+    color: red;
+    font-size: 2rem;
+}
+logo{
+    font-size: 2.2rem;
+    padding-left: 15px;
+    font-family: 'Rye', cursive;
+}
+.nav-link{
+    color:black;
+    font-size: 1.3rem;
+}
+.nav-link:hover{
+    color: white;
+    background: black;
+}
+
+#welcome-section{
+    background-image:url(background.jpg);
+    background-size: cover;
+    background-repeat:no-repeat ;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 75px;
+    padding-top: 20px;
+}
+#quote h2{
+    background: rgb(0,0,0,0.3);
+    padding: 40px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+#quote{
+    text-align: center;
+}
+#quote a{
+    margin-top: 50px;
+    background: rgb(247, 132, 0);
+    border-radius: 10px;
+    padding:10px;
+}
+#quote a:hover{
+    background: rgb(255, 94, 0);
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: black;
+}
+#stats h2{
+    text-align: center;
+    background: #ffe6d6;
+    font-family: 'Days One', sans-serif;
+}
+#stats{
+    background: white;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    gap: 10px;
+    justify-content: center;
+}
+#info h4{
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+#info p{
+    font-size: 1.2rem;
+    border: 1px solid black;
+    padding:40px;
+}
+#contact{
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+  }
+  #contact h2{
+   font-size:50px;
+   color:white;
+   margin-bottom: 5px;
+  }
+  #contact a{
+    margin:10px;
+    font-size:20px;
+    text-decoration: none;
+    color: black;
+  }
+  i{
+    margin-right:5px;
+  }
+  #icons{
+    display:flex;
+    gap: 15px;
+  }
+  #icon:hover{
+    transform:translate(0,10px);
+  }
+  footer{
+      text-align: right;
+      border-top:2px solid black;
+  }
+
+@media(max-width: 650px){
+    *{
+        padding-right: 0px;
+    }
+    body{
+        background-color: #ffe6d6;
+        width: 100%;
+
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-link{
+        font-size:15px;
+    }
+    nav ul{
+        background:rgba(255, 255, 255, 0.4)
+    }
+
+    logo{
+        margin-right: auto;
+        padding-left:60px;
+    }
+    #welcome-section{
+        padding-right:0px ;
+    }
+    #quote h2{
+        padding:10px;
+    }
+}

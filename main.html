@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirebaseTesting</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Days+One&family=Lobster&family=Rye&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar fixed-top justify-content-space-between">
+        <logo><i class="fas fa-tint"></i>BloodBank</logo>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="status" href="index.html">Logout</a>
+            </li>
+          </ul>
+    </nav>
+
+    <!--details-Form-->    
+    <div class="container">
+        <div class="form">
+        <div class="form-group row"><h2>Donor Registration</h2></div>
+        <div class="form-group row">
+            <label for="username" class="col-sm-2 col-form-label">Username:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="username" placeholder="Enter your name" required>
+            </div>
+          </div>
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="Enter your Email" Required>
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="contact" class="col-sm-2 col-form-label">Contact</label>
+            <div class="col-sm-10">
+              <input type="tel" minlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" id="phone" placeholder="Enter your number" required>
+            </div>
+          </div>
+        <!--Blood Groups-->
+        <div class="form-group row">
+        <label for="group" class="col-sm-2 col-form-label">Blood Group</label>
+        <div class="col-sm-10">
+        <select id="group" class="form-control">
+            <option id="selected" disabled selected>select blood group</option>
+            <option>A+ve</option>
+            <option>A-ve</option>
+            <option>B+ve</option>
+            <option>B-ve</option>
+            <option>AB+ve</option>
+            <option>AB-ve</option>
+            <option>O+ve</option>
+            <option>O-ve</option>
+          </select>
+        </div>
+        </div>
+        <div class="form-group row">
+        <input id="submit" class="btn-primary" type="submit" value="Submit">
+        </div>
+        </div>
+
+    <p id="demo"></p>
+    <h2>To get the registered donors data, click here</h2>
+    <button class="btn-primary"><a href="data.html" style="text-decoration: none; color: white;">Get donors list</a></button>
+    </div>
+
+    
+
+
+    <div id="contact">
+      <h4>For any queries reach out to us at</h4>
+      <div id="icons">
+        <div id="icon"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a></div>
+        <div id="icon"><a href="https://vardhaman.org/" target="_blank"><i class="fas fa-university"></i>university</a></div>
+        <div id="icon"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i>Twitter</a></div>
+        <div id="icon"><a href="mailto:tejaganesh5@gmail.com" target="_blank"><i class="fas fa-at"></i>Mail</a></div>
+        <div id="icon"><a href="tel:9618383432" target="_blank"><i class="fas fa-mobile-alt"></i>Mobile</a></div>
+      </div>
+    </div>
+  <!--footer code-->
+  <footer>
+     <p>
+      Vardhaman college of engineering<br>Copyright &copy;2021.All rights reserved
+     </p>
+  </footer>
+
+    
+
+
+
+
+    
+
+    
+<script src="https://kit.fontawesome.com/3e70ea9c41.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+<script src="config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Days+One&family=Lobster&family=Rye&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="register.css">
+
+    
+    
+</head>
+
+
+
+<body>
+    <nav class="navbar fixed-top justify-content-space-between">
+        <logo><i class="fas fa-tint"></i>BloodBank</logo>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+    </nav>
+
+
+
+    <h2>Welcome to <em>VCE BloodBank</em>, Get registered here.</h2>
+
+    <div id="box">
+        <div class="tile">
+        <article class="card-body">
+        <a href="login.html" class="float-right btn btn-outline-primary">Login</a>
+        <h4 class="card-title mb-4 mt-1">Sign up</h4>
+             <div>
+            <div class="form-group">
+                <label>Email</label>
+                <input id="reg-email" class="form-control" placeholder="Email" type="email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input id="reg-password" class="form-control" placeholder="******" type="password">
+            </div>
+            <div class="form-group"> 
+            </div> 
+            <div class="form-group">
+                <button id="reg-submit" type="submit" class="btn btn-primary btn-block">Sign Up</button>
+            </div>                                                         
+             </div>
+        </article>
+        </div>
+        <p id="demo"></p>
+        </div>
+        <div id="contact">
+            <h4>For any queries reach out to us at</h4>
+            <div id="icons">
+              <div id="icon"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a></div>
+              <div id="icon"><a href="https://vardhaman.org/" target="_blank"><i class="fas fa-university"></i>university</a></div>
+              <div id="icon"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i>Twitter</a></div>
+              <div id="icon"><a href="mailto:tejaganesh5@gmail.com" target="_blank"><i class="fas fa-at"></i>Mail</a></div>
+              <div id="icon"><a href="tel:9618383432" target="_blank"><i class="fas fa-mobile-alt"></i>Mobile</a></div>
+            </div>
+          </div>
+        <!--footer code-->
+        <footer>
+           <p>
+            Vardhaman college of engineering<br>Copyright &copy;2021.All rights reserved
+           </p>
+        </footer>
+
+
+        
+
+    
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="register.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    <script src="config.js"></script>
+    
+</body>
+</html>

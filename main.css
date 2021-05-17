@@ -1,0 +1,107 @@
+body{
+    background-color: #ffe6d6;
+}
+nav{
+    background-color: rgba(255, 255, 255,0.5);
+    height: 7%;
+}
+nav logo i{
+    color: red;
+    font-size: 2rem;
+}
+logo{
+    font-size: 2.2rem;
+    padding-left: 15px;
+    font-family: 'Rye', cursive;
+}
+.nav-link{
+    color:black;
+    font-size: 1.3rem;
+}
+.nav-link:hover{
+    color: white;
+    background: #0275d8;
+}
+h2{
+    text-align: center;
+    margin-top: 7%;
+    font-family: monospace;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px;
+}
+.form{
+    width:70%;
+    margin-top: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 10px 10px black;
+}
+.form-group{
+    margin: 15px;
+}
+.btn-primary{
+    font-family: monospace;
+}
+#demo{
+    font-family: monospace;
+}
+#data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#data button{
+    background-color:#0880e9;
+    color: white;
+    border-radius: 10px;
+}
+.table-responsive{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    text-align: center;
+    margin-top:20px;
+}
+#contact{
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+  }
+  #contact h2{
+   font-size:50px;
+   color:white;
+   margin-bottom: 5px;
+  }
+  #contact a{
+    margin:10px;
+    font-size:20px;
+    text-decoration: none;
+    color: black;
+  }
+  i{
+    margin-right:5px;
+  }
+  #icons{
+    display:flex;
+    gap: 15px;
+  }
+  #icon:hover{
+    transform:translate(0,10px);
+  }
+footer{
+    text-align: right;
+    border-top:2px solid black;
+}
